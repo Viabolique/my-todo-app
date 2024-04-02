@@ -9,9 +9,9 @@ def add_todo():
     functions.write_todos(todos)
 
 
-st.title("Планировщик дел")
-st.subheader("Это планировщик дел Алексея!")
-st.write("Это приложение увеличит твою продуктивность, Евгений!")
+st.title("Супеппланировщик!")
+st.subheader("Это планировщик Евгения!")
+st.write("Это приложение увеличит мою продуктивность(подумал Евгений)!")
 st.write("Не тормози скорее дело впиши!")
 
 for index, todo in enumerate(todos):
