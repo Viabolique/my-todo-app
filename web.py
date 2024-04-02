@@ -9,9 +9,10 @@ def add_todo():
     functions.write_todos(todos)
 
 
-st.title("My Todo App")
-st.subheader("This is my Todo App!")
-st.write("This app is to increase your productivity!")
+st.title("Планировщик дел")
+st.subheader("Это планировщик дел Алексея!")
+st.write("Это приложение увеличит твою продуктивность, Евгений!")
+st.write("Не тормози скорее дело впиши!")
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
@@ -21,7 +22,7 @@ for index, todo in enumerate(todos):
         del st.session_state[todo]
         st.experimental_rerun()
 
-st.text_input(label="", placeholder="Add new todo...",
+st.text_input(label="", placeholder="Сюда пиши, Женя...",
               on_change=add_todo, key="new_todo")
 
 print("Hello")
